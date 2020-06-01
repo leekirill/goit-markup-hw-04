@@ -140,7 +140,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-left: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -148,18 +147,7 @@ body {
 .header__link-contact:hover,
 .header__link-contact:focus {
   color: var(--primary-color);
-}
-
-.header__link-contact::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-image: url(../images/main/mail.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 10px;
+  fill: var(--primary-color);
 }
 
 .contact-list .list:not(:first-child) {
@@ -174,6 +162,15 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.header .mail-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header .mail-icon:hover {
+  fill: var(--primary-color);
 }
 
 /* hero */
