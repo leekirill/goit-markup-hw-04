@@ -26,7 +26,6 @@ body {
 
 .header {
   background-color: var(--primary-background-color);
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -38,7 +37,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -65,7 +64,7 @@ body {
 }
 
 .nav-list > .list:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 
 .logo {
@@ -80,6 +79,10 @@ body {
 
 .logo-accent {
   color: var(--title-text-color);
+}
+
+.header .list {
+  position: relative;
 }
 
 .header__link {
@@ -101,6 +104,18 @@ body {
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.header__link--current::before {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
 }
 
 .header__link:hover,
@@ -140,9 +155,11 @@ body {
   content: "";
   width: 16px;
   height: 16px;
-  background-image: url(../images/main/person1.png);
+  background-image: url(../images/main/mail.svg);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
 }
 
 .contact-list .list:not(:first-child) {
@@ -167,7 +184,7 @@ body {
 }
 
 .hero .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 200px;
@@ -182,6 +199,7 @@ body {
       rgba(47, 48, 58, 0.8)
     ),
     url("/images/main/Header\ img.jpg");
+  background-size: cover;
 }
 
 .hero .title {
@@ -230,7 +248,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  width: 1170px;
+  width: 1200px;
   padding-bottom: 94px;
   padding-top: 94px;
   padding-left: 15px;
@@ -256,17 +274,12 @@ body {
   border-radius: 4px;
 }
 
-.benefits .image:hover,
-.benefits .image:focus {
-  background-color: var(--primary-color);
-}
-
 .benefits .block:not(:last-child) {
   margin-right: 30px;
 }
 
 .benefits .block {
-  width: 270px;
+  width: calc((100% - 90px) / 4);
 }
 
 .benefits .title {
@@ -295,7 +308,7 @@ body {
 .about-us .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 94px;
@@ -315,10 +328,80 @@ body {
   margin-right: 30px;
 }
 
+.about-us .block {
+  position: relative;
+}
+
 .about-us .image {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.about-us .image-box-desktop::after {
+  content: "Десктопные приложения";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.about-us .image-box-mobile::after {
+  content: "Мобильные приложения";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+
+.about-us .image-box-design::after {
+  content: "Дизайнерские решения";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  color: #fff;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 .about-us .heading {
@@ -331,17 +414,13 @@ body {
 }
 
 .about-us .title {
-  color: var(--primary-background-color);
+  color: var(--title-text-color);
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  background: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
-  border-radius: 0px 0px 4px 4px;
 }
 
 /* team */
@@ -357,7 +436,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
 }
 
 .team .list {
@@ -367,7 +446,7 @@ body {
 
 .team .image {
   display: block;
-  max-width: 100%;
+  max-width: 270px;
   height: auto;
 }
 
@@ -438,7 +517,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
 }
 
 .clients .heading {
@@ -489,7 +568,7 @@ body {
 .footer .container {
   margin-right: auto;
   margin-left: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -497,6 +576,7 @@ body {
 .footer .content {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
   padding-top: 56px;
   padding-bottom: 28px;
 }
@@ -549,8 +629,14 @@ body {
   margin-bottom: 21px;
 }
 
-.footer .subscribe {
-  margin-left: 180px;
+.footer .form-title {
+  color: var(--primary-background-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .footer .social-list {
@@ -561,8 +647,44 @@ body {
   margin-right: 12px;
 }
 
+.footer .button {
+  background-color: var(--primary-color);
+  color: var(--primary-background-color);
+  text-decoration: none;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+
+  display: block;
+
+  min-width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 29px;
+  padding-left: 29px;
+  margin-top: 21px;
+  border-radius: 4px;
+}
+
+.footer .button::after {
+  content: "";
+  display: inline-block;
+  background-image: url(../images/main/icon-send.png);
+  background-size: contain;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 .logo-accent-footer {
   color: #fff;
+}
+
+.footer .form {
+  display: block;
 }
 
 .footer .copyright {
