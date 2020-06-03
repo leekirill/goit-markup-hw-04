@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
@@ -34,22 +34,21 @@
               <a href="#" class="header__link">Контакты</a>
             </li>
           </ul>
-        </nav>
+        </nav>        
         <ul class="contact-list">
           <li class="list">
-            <a href="mailto:nfo@devstudio.com" class="header__link-contact"
-              ><svg class="mail-icon">
-                <use href="./images/main/icomoon/svg/envelope-hover.svg#icon-envelope-hover"></use>
+            <a href="mailto:nfo@devstudio.com" class="header__link-contact">
+              <svg class="icon-mail">
+                <use href="../images/main/sprite.svg#icon-mail"></use>
               </svg>info@devstudio.com
             </a>
           </li>
           <li class="list">
-            <img
-              src="./images/main/smartphone.svg"
-              alt="иконка телефона"
-              class="icon"
-            />
-            <a href="tel:+380961111111" class="header__link-contact">+38 096 111 11 11 </a>
+            <a href="tel:+380961111111" class="header__link-contact">
+              <svg class="icon-smartphone">
+                <use href="../images/main/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11 </a>
           </li>
         </ul>
       </div>
@@ -73,11 +72,9 @@
           <div class="container">
             <ul class="list">
               <li class="block">
-                <img
-                  src="./images/main/icon1.svg"
-                  alt="иконка спутника"
-                  class="image"
-                />
+                <svg class="icon-antenna">
+                  <use href="../images/main/sprite.svg#icon-antenna-1"></use>
+                </svg>
                 <h3 class="title">Внимание к деталям</h3>
                 <p class="subtitle">
                   Идейные соображения, а также начало повседневной работы по
@@ -85,11 +82,9 @@
                 </p>
               </li>
               <li class="block">
-                <img
-                  src="./images/main/icon2.svg"
-                  alt="иконка часов"
-                  class="image"
-                />
+                <svg class="icon-clock">
+                  <use href="../images/main/sprite.svg#icon-clock-1"></use>
+                </svg>
                 <h3 class="title">Пунктуальность</h3>
                 <p class="subtitle">
                   Задача организации, в особенности же рамки и место обучения
@@ -97,11 +92,9 @@
                 </p>
               </li>
               <li class="block">
-                <img
-                  src="./images/main/icon3.svg"
-                  alt="иконка компьютера"
-                  class="image"
-                />
+                <svg class="icon-diagram"> 
+                  <use href="../images/main/sprite.svg#icon-diagram-1"></use>
+                </svg>
                 <h3 class="title">Планирование</h3>
                 <p class="subtitle">
                   Равным образом консультация с широким активом в значительной
@@ -109,11 +102,9 @@
                 </p>
               </li>
               <li class="block">
-                <img
-                  src="./images/main/icon4.svg"
-                  alt="иконка космонавта"
-                  class="image"
-                />
+                <svg class="icon-astronaut">
+                  <use href="../images/main/sprite.svg#icon-astronaut-1"></use>
+                </svg>
                 <h3 class="title">Современные технологии</h3>
                 <p class="subtitle">
                   Значимость этих проблем настолько очевидна, что реализация
@@ -130,13 +121,13 @@
             <h2 class="heading">Чем мы занимаемся</h2>
             <ul class="list">
               <li class="block">
-                <div class="image-box-desktop"><img src="./images/main/img-box1.png" alt="компьютер" class="image"/></div>
+                <div class="image-box-desktop"><img src="./images/main/desktop-img.jpg" alt="компьютер" class="image"/></div>
               </li>
               <li class="block">
-                <div class="image-box-mobile"><img src="./images/main/img-box2.png" alt="смартфон" class="image"/></div>               
+                <div class="image-box-mobile"><img src="./images/main/mobile-img.jpg" alt="смартфон" class="image"/></div>               
               </li>
               <li class="block">
-                <div class="image-box-design"><img src="./images/main/img-box3.png" alt="монитор" class="image"/></div>              
+                <div class="image-box-design"><img src="./images/main/design-img.jpg" alt="монитор" class="image"/></div>              
               </li>
             </ul>
             </div>
@@ -147,137 +138,153 @@
           <div class="container">
             <h2 class="heading">Наша команда</h2>
             <ul class="list">
-              <li class="block">
-                <img
-                  src="./images/main/person1.png"
-                  alt="член команды"
-                  class="image"
-                />
-                <div class="block-content">
-                  <h3 class="name">John Smith</h3>
-                  <p class="subtitle">Product Designer</p>
-                  <ul class="social-list">
-                    <li class="social-icon">
-                      <a href="https://instagram.com" target="_blank">
-                        <img src="./images/main/social/1.svg" alt="инстаграм" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://twitter.com" target="_blank">
-                        <img src="./images/main/social/2.svg" alt="твиттер" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://facebook.com" target="_blank">
-                        <img src="./images/main/social/3.svg" alt="фейсбук" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://linkedin.com" target="_blank">
-                        <img src="./images/main/social/4.svg" alt="линкедин" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <li class="person-card">
+              <img src="./images/main/person-1.jpg" alt="член команды" class="image">
+              <div class="content">
+                <h3 class="name">John Smith</h3>
+                <p class="descript">Product Designer</p>
+                <ul class="social-list">
+                  <li class="social-icon">
+                  <a href="http://instagram.com/" class="social-link" aria-label="ссылка на инстаграм">
+                    <svg class="icon">
+                      <use href="../images/main/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="social-icon">
+                  <a href="http://twitter.com/" class="social-link" aria-label="ссылка на инстаграм">
+                    <svg class="icon">
+                      <use href="../images/main/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="social-icon">
+                  <a href="http://facebook.com/" class="social-link" aria-label="ссылка на инстаграм">
+                    <svg class="icon">
+                      <use href="../images/main/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="social-icon">
+                  <a href="http://linkedin.com/" class="social-link" aria-label="ссылка на инстаграм">
+                    <svg class="icon">
+                      <use href="../images/main/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                  </li>
+                </ul>
+             </div>
               </li>
-              <li class="block">
-                <img
-                  src="./images/main/person2.png"
-                  alt="член команды"
-                  class="image"
-                />
-                <div class="block-content">
-                  <h3 class="name">Marta Stewart</h3>
-                  <p class="subtitle">Frontend Developer</p>
-                  <ul class="social-list">
-                    <li class="social-icon">
-                      <a href="https://instagram.com" target="_blank">
-                        <img src="./images/main/social/1.svg" alt="инстаграм" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://twitter.com" target="_blank">
-                        <img src="./images/main/social/2.svg" alt="твиттер" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://facebook.com" target="_blank">
-                        <img src="./images/main/social/3.svg" alt="фейсбук" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://linkedin.com" target="_blank">
-                        <img src="./images/main/social/4.svg" alt="линкедин" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <li class="person-card">
+                <img src="./images/main/person-2.jpg" alt="член команды" class="">
+              <div class="content">
+                <h3 class="name">Marta Stewart</h3>
+                <p class="descript">Frontend Developer</p>
+                <ul class="social-list">
+                  <li class="social-icon">
+                    <a href="http://instagram.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://twitter.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://facebook.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://linkedin.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
               </li>
-              <li class="block">
-                <img
-                  src="./images/main/person3.png"
-                  alt="член команды"
-                  class="image"
-                />
-                <div class="block-content">
-                  <h3 class="name">Robert Jaki</h3>
-                  <p class="subtitle">Marketing</p>
-                  <ul class="social-list">
-                    <li class="social-icon">
-                      <a href="https://instagram.com" target="_blank">
-                        <img src="./images/main/social/1.svg" alt="инстаграм" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://twitter.com" target="_blank">
-                        <img src="./images/main/social/2.svg" alt="твиттер" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://facebook.com" target="_blank">
-                        <img src="./images/main/social/3.svg" alt="фейсбук" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://linkedin.com" target="_blank">
-                        <img src="./images/main/social/4.svg" alt="линкедин" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <li class="person-card">
+                <img src="./images/main/person-3.jpg" alt="член команды" class="">
+              <div class="content">
+                <h3 class="name">Robert Jakis</h3>
+                <p class="descript">Marketing</p>
+                <ul class="social-list">
+                  <li class="social-icon">
+                    <a href="http://instagram.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://twitter.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://facebook.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://linkedin.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
               </li>
-              <li class="block">
-                <img
-                  src="./images/main/person4.png"
-                  alt="член команды"
-                  class="image"
-                />
-                <div class="block-content">
-                  <h3 class="name">Martin Do</h3>
-                  <p class="subtitle">UI Designer</p>
-                  <ul class="social-list">
-                    <li class="social-icon">
-                      <a href="https://instagram.com" target="_blank">
-                        <img src="./images/main/social/1.svg" alt="инстаграм" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://twitter.com" target="_blank">
-                        <img src="./images/main/social/2.svg" alt="твиттер" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://facebook.com" target="_blank">
-                        <img src="./images/main/social/3.svg" alt="фейсбук" />
-                      </a>
-                    </li>
-                    <li class="social-icon">
-                      <a href="https://linkedin.com" target="_blank">
-                        <img src="./images/main/social/4.svg" alt="линкедин" />
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <li class="person-card">
+                <img src="./images/main/person-4.jpg" alt="член команды" class="">
+              <div class="content">
+                <h3 class="name">Martin Doe</h3>
+                <p class="descript">UI Designer</p>
+                <ul class="social-list">
+                  <li class="social-icon">
+                    <a href="http://instagram.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://twitter.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://facebook.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-icon">
+                    <a href="http://linkedin.com/" class="social-link" aria-label="ссылка на инстаграм">
+                      <svg class="icon">
+                        <use href="../images/main/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
               </li>
             </ul>
           </div>
@@ -289,51 +296,45 @@
             <h2 class="heading">Постоянные клиенты</h2>
             <ul class="list">
               <li class="brand">
-                <a href="https://google.com/" target="_blank">
-                  <img
-                    src="./images/main/brands/logo1.svg"
-                    alt="логотип компании" class="brand-icon"
-                  />
+                <a href="https://google.com/" target="_blank" class="logotype-link" aria-label="логотип компании">
+                  <svg class="logotype" width="44.27px" height="49.43px">
+                    <use href="../images/main/sprite.svg#icon-logo-1"></use>
+                  </svg>                  
                 </a>
               </li>
               <li class="brand">
-                <a href="https://google.com/" target="_blank">
-                  <img
-                    src="./images/main/brands/logo2.svg"
-                    alt="логотип компании" class="brand-icon"
-                  />
+                <a href="https://google.com/" target="_blank" class="logotype-link" aria-label="логотип компании">
+                  <svg class="logotype" width="40px" height="52px">
+                    <use href="../images/main/sprite.svg#icon-logo-2"></use>
+                  </svg>
                 </a>
               </li>
               <li class="brand">
-                <a href="https://google.com/" target="_blank">
-                  <img
-                    src="./images/main/brands/logo3.svg"
-                    alt="логотип компании" class="brand-icon"
-                  />
+                <a href="https://google.com/" target="_blank" class="logotype-link" aria-label="логотип компании">
+                  <svg class="logotype" width="41px" height="42.6px">
+                    <use href="../images/main/sprite.svg#icon-logo-3"></use>
+                  </svg>
                 </a>
               </li>
               <li class="brand">
-                <a href="https://google.com/" target="_blank">
-                  <img
-                    src="./images/main/brands/logo4.svg"
-                    alt="логотип компании" class="brand-icon"
-                  />
+                <a href="https://google.com/" target="_blank" class="logotype-link" aria-label="логотип компании">
+                  <svg class="logotype" width="79.66px" height="42.02px">
+                    <use href="../images/main/sprite.svg#icon-logo-4"></use>
+                  </svg>
                 </a>
               </li>
               <li class="brand">
-                <a href="https://google.com/" target="_blank">
-                  <img
-                    src="./images/main/brands/logo5.svg"
-                    alt="логотип компании" class="brand-icon"
-                  />
+                <a href="https://google.com/" target="_blank" class="logotype-link" aria-label="логотип компании">
+                  <svg class="logotype" width="59px" height="47px">
+                    <use href="../images/main/sprite.svg#icon-logo-5"></use>
+                  </svg>
                 </a>
               </li>
               <li class="brand">
-                <a href="https://google.com/" target="_blank">
-                  <img
-                    src="./images/main/brands/logo6.svg"
-                    alt="логотип компании" class="brand-icon"
-                  />
+                <a href="https://google.com/" target="_blank" class="logotype-link" aria-label="логотип компании">
+                  <svg class="logotype" width="88.48px" height="45.44px">
+                    <use href="../images/main/sprite.svg#icon-logo-6"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -371,17 +372,19 @@
           <h3 class="title">присоединяйтесь</h3>
           <ul class="social-list">
             <li>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                class="social-icon"
-              >
-                <img src="./images/main/social/1.svg" alt="инстаграм" />
+              <a href="https://instagram.com" target="_blank" class="social-icon">
+              <svg class="icon">
+                <use href="../images/main/sprite.svg#icon-instagram">
+                </use>
+              </svg>
               </a>
             </li>
             <li>
               <a href="https://twitter.com" target="_blank" class="social-icon">
-                <img src="./images/main/social/2.svg" alt="твиттер" />
+              <svg class="icon">
+                <use href="../images/main/sprite.svg#icon-twitter">
+                </use>
+              </svg>
               </a>
             </li>
             <li>
@@ -390,7 +393,10 @@
                 target="_blank"
                 class="social-icon"
               >
-                <img src="./images/main/social/3.svg" alt="фейсбук" />
+              <svg class="icon">
+                <use href="../images/main/sprite.svg#icon-facebook">
+                </use>
+              </svg>
               </a>
             </li>
             <li>
@@ -399,14 +405,20 @@
                 target="_blank"
                 class="social-icon"
               >
-                <img src="./images/main/social/4.svg" alt="линкедин" />
+              <svg class="icon">
+                <use href="../images/main/sprite.svg#icon-linkedin">
+                </use>
+              </svg>
               </a>
             </li>
           </ul>
           </div>
           <div class="form">
             <b class="form-title">Подпишитесь на рассылку</b>
-            <a href="" class="button">Подписаться</a>
+            <a href="" class="button">Подписаться
+              <svg class="icon-send">
+                <use href="../images/main/sprite.svg#icon-icon-send"></use>
+              </svg></a>
           </div>
       </div>
       <div class="copyright">

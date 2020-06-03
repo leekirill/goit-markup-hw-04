@@ -26,7 +26,6 @@ body {
 
 .header {
   background-color: var(--primary-background-color);
-  border-bottom: 1px solid #ececec;
 }
 
 .header-nav {
@@ -41,6 +40,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .list,
@@ -107,7 +107,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.header__link--current::before {
+/* .header__link--current::before {
   display: inline-block;
   position: absolute;
   bottom: 0;
@@ -117,7 +117,7 @@ body {
   height: 4px;
   border-radius: 10px;
   background-color: var(--primary-color);
-}
+} */
 
 .header__link:hover,
 .header__link:focus {
@@ -141,7 +141,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-left: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -149,18 +148,6 @@ body {
 .header__link-contact:hover,
 .header__link-contact:focus {
   color: var(--primary-color);
-}
-
-.header__link-contact::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 16px;
-  background-image: url(../images/main/mail.svg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-right: 10px;
 }
 
 .contact-list .list:not(:first-child) {
@@ -176,10 +163,30 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-/* portfolio */
+
+/* header icons */
+
+.header .icon-mail {
+  display: inline-block;
+  fill: currentColor;
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+}
+
+.header .icon-smartphone {
+  display: inline-block;
+  fill: currentColor;
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+}
+
 .heading {
   color: transparent;
 }
+
+/* portfolio */
 
 .portfolio .container {
   margin-left: auto;
@@ -285,10 +292,12 @@ body {
 }
 
 .portfolio .box {
+  display: flex;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   border-radius: 5px;
+  position: relative;
 }
 
 .portfolio .box:nth-last-child(-n + 3) {
@@ -309,6 +318,33 @@ body {
   padding-left: 24px;
   padding-bottom: 20px;
 }
+
+/* .portfolio .overlay::before {
+  position: absolute;
+  content: "Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.";
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 294px;
+  background-color: var(--primary-color);
+  opacity: 0;
+  transition: 0.2s;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  padding: 63px 24px;
+}
+
+.portfolio .overlay:hover::before {
+  opacity: 0.9;
+  transition: 0.2s;
+} */
 
 /* footer */
 
@@ -350,6 +386,26 @@ body {
 .footer .social-list {
   display: flex;
   padding: 0;
+}
+
+.footer .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #fff;
+}
+
+.footer .social-icon:hover {
+  background-color: var(--primary-color);
+}
+
+.footer .icon {
+  width: 20px;
+  height: 20px;
 }
 
 .footer .list {
@@ -408,7 +464,9 @@ body {
   line-height: 1.8;
   letter-spacing: 0.06em;
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   min-width: 200px;
   padding-top: 10px;
@@ -419,15 +477,11 @@ body {
   border-radius: 4px;
 }
 
-.footer .button::after {
-  content: "";
-  display: inline-block;
-  background-image: url(../images/main/icon-send.png);
-  background-size: contain;
-  background-position: center;
+.footer .icon-send {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+  fill: #fff;
 }
 
 .logo-accent-footer {
